@@ -98,3 +98,24 @@ select {
   --line-height-2xl: 1.444;
   --line-height-3xl: 1.625;
 }
+
+/* || Global styles */
+body {
+  background-color: var(--color-dr-white);
+  color: var(--color-dusty-chimney);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-3xl);
+}
+
+:is(a):focus-visible {
+  outline: 0.3rem solid var(--color-spinel-stone-black);
+  outline-offset: 0.3rem;
+}
+
+/* || Page container styles */
+.page {
+  max-width: 90rem;
+  margin-inline: auto;
+}
