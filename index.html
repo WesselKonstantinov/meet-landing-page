@@ -36,13 +36,15 @@
       <main class="section section--main">
         <div class="section__inner">
           <div class="hero">
-            <img
-              src="./assets/tablet/image-hero.png"
-              alt="A collection of 12 avatars showing a diverse range of individuals. Some are smiling, whereas others have a neutral facial expression."
-              width="820"
-              height="303"
-              class="hero__image hero__image--complete"
-            />
+            <div class="hero__image-wrapper">
+              <img
+                src="./assets/tablet/image-hero.png"
+                alt="A collection of 12 avatars showing a diverse range of individuals. Some are smiling, whereas others have a neutral facial expression."
+                width="820"
+                height="303"
+                class="hero__image hero__image--complete"
+              />
+            </div>
             <img
               src="./assets/desktop/image-hero-left.png"
               alt="A collection of 6 avatars showing a diverse range of individuals. Some are smiling, whereas others have a neutral facial expression."
@@ -64,8 +66,13 @@
                 and collaborate across any device.
               </p>
               <div class="hero__actions">
-                <a href="/" class="cta">Download v1.3</a>
-                <a href="/" class="cta">What is it?</a>
+                <a href="/" class="cta cta--acapulco-cliffs">
+                  Download
+                  <span class="cta__text cta__text--silverpine-cyan">v1.3</span>
+                </a>
+                <a href="/" class="cta cta--lusty-lavender cta--small"
+                  >What is it?</a
+                >
               </div>
             </div>
           </div>
@@ -130,7 +137,10 @@
               Stay connected with reliable HD meetings and unlimited one-on-one
               and group video sessions.
             </p>
-            <a href="/" class="cta">Download v1.3</a>
+            <a href="/" class="cta cta--lusty-lavender">
+              Download
+              <span class="cta__text cta__text--lavender-fragrance">v1.3</span>
+            </a>
           </div>
         </div>
       </footer>
