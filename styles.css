@@ -49,6 +49,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -212,10 +213,6 @@ body {
   gap: 3rem;
 }
 
-.hero__image {
-  height: auto;
-}
-
 .hero__image--split {
   display: none;
 }
@@ -241,4 +238,17 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+/* || Feature section styles */
+.feature__image-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem 1.5625rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature__image {
+  border-radius: 0.5rem;
 }
