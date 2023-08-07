@@ -77,12 +77,15 @@ select {
 /* || Custom properties */
 :root {
   --color-acapulco-cliffs: hsl(192 37% 48%);
+  --color-surfin: hsl(192 54% 64%);
   --color-lusty-lavender: hsl(268 34% 53%);
   --color-spinel-stone-black: hsl(240 21% 20%);
   --color-dusty-chimney: hsl(240 10% 57%);
   --color-silverpine-cyan: hsl(192 90% 77%);
   --color-lavender-fragrance: hsl(268 100% 85%);
+  --color-middys-purple: hsl(268 55% 71%);
   --color-dr-white: hsl(0 0% 98%);
+  --color-white: hsl(0 0% 100%);
   --font-family-primary: "Red Hat Display", sans-serif;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -119,6 +122,7 @@ body {
 .page {
   max-width: 90rem;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 /* || Landmark section styles */
@@ -160,4 +164,81 @@ body {
 
 .link:hover {
   transform: scale(1.15);
+}
+
+/* || CTA styles */
+.cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 1.8125rem;
+  color: var(--color-white);
+  font-weight: var(--font-weight-black);
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+}
+
+.cta--acapulco-cliffs {
+  background-color: var(--color-acapulco-cliffs);
+}
+
+.cta--acapulco-cliffs:hover {
+  background-color: var(--color-surfin);
+}
+
+.cta--lusty-lavender {
+  background-color: var(--color-lusty-lavender);
+}
+
+.cta--lusty-lavender:hover {
+  background-color: var(--color-middys-purple);
+}
+
+.cta--small {
+  padding-inline: 1.8125rem;
+}
+
+.cta__text--silverpine-cyan {
+  color: var(--color-silverpine-cyan);
+}
+
+.cta__text--lavender-fragrance {
+  color: var(--color-lavender-fragrance);
+}
+
+/* || Hero styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero__image {
+  height: auto;
+}
+
+.hero__image--split {
+  display: none;
+}
+
+.hero__image-wrapper {
+  margin-inline: -2.75rem;
+}
+
+.hero__intro > * + * {
+  margin-top: var(--flow-space, 1.5rem);
+}
+
+.hero__title {
+  color: var(--color-spinel-stone-black);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-lg);
+}
+
+.hero__actions {
+  --flow-space: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
