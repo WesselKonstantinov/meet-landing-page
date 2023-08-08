@@ -87,6 +87,10 @@ select {
   --color-middys-purple: hsl(268 55% 71%);
   --color-dr-white: hsl(0 0% 98%);
   --color-white: hsl(0 0% 100%);
+  --gradient-acapulco-cliffs: linear-gradient(
+    hsl(192 37% 48% / 0.8955) 0%,
+    hsl(192 37% 48% / 0.8955) 100%
+  );
   --font-family-primary: "Red Hat Display", sans-serif;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -153,6 +157,11 @@ body {
 
 .section--footer {
   margin-top: 11rem;
+  padding-top: 5.75rem;
+  padding-bottom: 4.5rem;
+  background: var(--gradient-acapulco-cliffs),
+    url("./assets/mobile/image-footer.jpg");
+  background-size: cover;
 }
 
 .section__inner {
@@ -257,6 +266,10 @@ body {
   margin-top: 9.25rem;
 }
 
+.feature--footer {
+  margin-top: 0;
+}
+
 .feature > * + * {
   margin-top: var(--flow-space, 2rem);
 }
@@ -270,7 +283,11 @@ body {
   margin-inline: auto;
   background-color: var(--color-dr-white);
   border-radius: 50%;
-  border: 1px solid hsl(240 10% 57% / 0.25);
+  border: 0.0625rem solid hsl(240 10% 57% / 0.25);
+}
+
+.feature__label-group--footer {
+  margin-top: -7.5rem;
 }
 
 .feature__label-group::before {
@@ -305,6 +322,10 @@ body {
   --flow-space: 4rem;
 }
 
+.feature__heading-group > * + * {
+  margin-top: 1.5rem;
+}
+
 .feature__ribbon {
   color: var(--color-acapulco-cliffs);
   font-weight: var(--font-weight-black);
@@ -313,9 +334,23 @@ body {
 }
 
 .feature__heading {
-  margin-top: 1.5rem;
   color: var(--color-spinel-stone-black);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-black);
   line-height: var(--line-height-xl);
+}
+
+.feature__heading--white {
+  --flow-space: 4rem;
+  color: var(--color-white);
+}
+
+.feature__text--white {
+  --flow-space: 1.5rem;
+  color: var(--color-white);
+}
+
+.feature__text--large {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-2xl);
 }
