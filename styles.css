@@ -525,7 +525,7 @@ body {
   }
 
   .feature__text {
-    max-width: 32.75rem;
+    max-width: 33.75rem;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-2xl);
   }
