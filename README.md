@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/meet-landing-page-using-a-combination-of-css-grid-and-flexbox-2l1eQhpaX6](https://www.frontendmentor.io/solutions/meet-landing-page-using-a-combination-of-css-grid-and-flexbox-2l1eQhpaX6)
+- Live Site URL: [https://wesselkonstantinov.github.io/meet-landing-page/](https://wesselkonstantinov.github.io/meet-landing-page/)
 
 ## My process
 
